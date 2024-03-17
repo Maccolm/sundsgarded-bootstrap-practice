@@ -18,3 +18,18 @@ h1{
 	height: 200px;
 	object-fit: cover;
 }
+.messages{
+	position: absolute;
+	top: 100px;
+}
+.bg-light a{
+	display: block;
+	font-size: 1.6em;
+	font-weight: 500;
+	color: inherit;
+	text-decoration: none;
+	transition: 0.3s ease 0s;
+}
+ .bg-light a:hover {
+ 	color: #007bff;
+ }
