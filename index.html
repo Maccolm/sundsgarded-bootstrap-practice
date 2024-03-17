@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>bootstrap</title>
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -14,18 +15,90 @@
 				<a href="#home" class="nav-item nav-link active" id="home-tab" data-bs-toggle='tab' role="tab" aria-controls="home" aria-selected="true">
 					<i class="bi-house-door"></i> Home
 				</a>
-				<a href="#" class="nav-item nav-link" id="profile-tab" data-bs-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">
+				<a href="#profile" class="nav-item nav-link" id="profile-tab" data-bs-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">
 					<i class="bi-person"></i> Profile
 				</a>
-				<a href="#" class="nav-item nav-link" id="messages-tab" data-bs-toggle="tab" role="tab" aria-controls="messages" aria-selected="false">
+				<a href="#messages" class="nav-item nav-link" id="messages-tab" data-bs-toggle="tab" role="tab" aria-controls="messages" aria-selected="false">
 					<i class="bi-envelope"></i> Messages
 				</a>
 				<a href="#" class="nav-item nav-link disabled" tabindex="-1" id="reports-tab" data-bs-toggle="tab" role="tab" aria-controls="reports" aria-selected="false">
 					<i class="bi-bar-chart"></i> Reports
 				</a>
 			</nav>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="home" role="tab-panel" aria-labelledby="home-tab">
+					<div class="home-content d-flex w-100">
+						<div class="row align-items-center w-100">
+							<div class="col-md-6 d-flex justify-content-center align-items-center">
+								<div class="greeting mx-auto text-white text-nowrap">
+									<h1 class="mb-5">Welcome to Home Page</h1>
+									<p class="lead">
+									Here you can see how the website is looking developed with bootstrap
+									</p>
+									<p>Let see <a href="#profile-tab" type="button" class="btn btn-primary" id="profile-btn">Profile</a> page</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tap-pane fade" id="profile" role="tab-panel" aria-labelledby="profile-tab">
+					<div class="container mt-5 md-5">
+						<div class="card border-0">
+							<div class="d-flex justify-content-center align-items-center">
+								<img src="img/profile.JPG" class="profile-img rounded-circle center" alt="rounded profile picture">
+							</div>
+							<div class="card-body text-center">
+								<h2 class="name text-center mt-5">Vitalii Shapovalov</h2>
+							</div>
+						</div>
+						<div class="container mt-5">
+							<div class="row justify-content-center" style="gap: 10px;">
+								<div class="col-6 col-sm-5 md-3">
+									<div class="card" style=" min-width: 170px;">
+										<div class="card-body">
+											<h5 class="paramert">Followers</h5>
+											<p>12540</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-5 md-3">
+									<div class="card"  style=" min-width: 170px;">
+										<div class="card-body">
+											<h5 class="paramert">Posts</h5>
+											<p>125</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center mt-3" style="gap: 10px;">
+								<div class="col-6 col-sm-5 md-3">
+									<div class="card" style=" min-width: 170px;">
+										<div class="card-body">
+											<h5 class="paramert">Likes</h5>
+											<p>20000</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-5 md-3">
+									<div class="card"  style=" min-width: 170px;">
+										<div class="card-body">
+											<h5 class="paramert">Status</h5>
+											<p class="text-success">online</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center mt-5" style="gap: 10px;">
+								<button class="col-md-3 btn btn-primary">Subscribe</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tap-pane fade" id="messages" role="tab-panel" aria-labelledby="profile-tab">messages</div>
+			</div>
 		</div>
 	</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
 </body>
 </html>

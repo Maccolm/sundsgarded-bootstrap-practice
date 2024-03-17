@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.home-content{
+	background: url('../img/bg.png') center/ cover no-repeat;
+	position: fixed;
+	top: 65px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100%;
+}
+h1{
+	font-family: 'Playfair Display SC';
+}
+.profile-img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
